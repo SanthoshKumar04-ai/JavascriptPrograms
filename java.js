@@ -74,7 +74,11 @@ console.log(celtofah(10));
 largest-word//
 
 
-
+ const  arr1=[2,7,8,39,9];
+    let a=Math.max(...arr1);
+    let b=Math.min(...arr1);
+    console.log(a);
+    console.log(b);
 
 //key:obj//
 
