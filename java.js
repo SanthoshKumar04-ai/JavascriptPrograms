@@ -92,3 +92,60 @@ function  keyobj(str){
         
      }
 }
+
+//adding an element using splice
+
+let arr=[1,2,3,4,5];
+let item=10;
+let position=2;
+arr.splice(position,0,item);
+console.log(arr);
+
+
+//sorting arrays with complex object
+
+let person=[
+    {name:rahul,age:22},{name:paramesh,age:9}]
+person.sort((a,b)=>a.age,b.age);
+console.log(person);
+
+//finding the longest string in an array
+
+let set=["Ronaldo","messi","Neymar","Zlatan"];
+let longest="";
+for(let l in set)
+    {
+        if(l.length>longest.length)
+            longest=l;
+    }
+console.log("Longest string is",longest);
+
+//rotating an array
+
+function rotateLeft(arr,k){
+k=k%arr.length;
+return arr.slice(k).concat(arr.slice(0,k));
+}
+
+function rotateright(arr,k){
+k=k%arr.length;
+return arr.slice(-k).concat(arr.slice(0,-k));
+
+let array=[1,2,3,4,5];
+console.log(rotateLeft(array,k);
+console.log(rotateright(array,k));
+
+//Genrating array of an given range
+
+let start=0;
+let end=10;
+let array=Array.from({length:end - start},(_,i) => start + i);
+console.log(array);
+start=0;
+end=10;
+let step=2;
+array=Array.from({length: Math.ceil((end - start)/step)},(_,i)=>start + i*step);
+console.log(array);
+    
+
+ 
